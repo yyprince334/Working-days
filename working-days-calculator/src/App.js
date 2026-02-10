@@ -50,7 +50,7 @@ function App() {
     0
   );
 
-  const mandatoryOfficeDays = Math.round(remainingDays * 0.6);
+  const mandatoryOfficeDays = Math.ceil(remainingDays * 0.6);
 
   const renderOptions = (max) =>
     Array.from({ length: max + 1 }, (_, i) => (
