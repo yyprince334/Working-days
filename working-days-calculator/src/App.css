@@ -8,15 +8,30 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f4f6fb;
+
+  background: radial-gradient(
+      circle at top left,
+      rgba(200, 16, 46, 0.08),
+      transparent 60%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(200, 16, 46, 0.06),
+      transparent 55%
+    ),
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #fafafa 100%
+    );
 }
 
 .card {
   width: 400px;
-  background: #fff;
+  background: #ffffff;
   padding: 32px;
   border-radius: 14px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 14px 32px rgba(120, 0, 0, 0.08);
 }
 
 .card h2 {
@@ -65,4 +80,11 @@ hr {
 
 .result span {
   font-weight: 600;
+}
+
+.sub-label {
+  font-size: 12px;
+  font-style: italic;
+  color: #666;
+  margin-bottom: 6px;
 }

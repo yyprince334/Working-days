@@ -106,6 +106,7 @@ function App() {
 
         <div className="field">
           <label>Exemption Days</label>
+          <div className="sub-label">Project / Base Location Holiday</div>
           <select
             value={exemptions}
             onChange={(e) => setExemptions(e.target.value)}
